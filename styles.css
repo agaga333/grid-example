@@ -19,7 +19,7 @@
     clear: both;
 }
 
-[class*="col-"] {
+[class^="col-"] {
     position: relative;
     min-height: 1px;
     padding-right: 15px;

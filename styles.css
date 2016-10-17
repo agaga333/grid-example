@@ -3,13 +3,14 @@
 }
 
 .header {
-    /*background-image:url('../images-grid/doyouspeak.jpg');*/
-    background-color: grey;
+    background-image:url('images-grid/doyouspeak.jpg');
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     position: relative;
     height: 100vh;
 }
-
 
 .navigation {
     position: fixed;
@@ -24,7 +25,7 @@
 }
 
 .header-quotation {
-    padding: 400px 0;
+    padding: 325px 0;
     color: #fff;
     font-size: 50px;
     line-height: 70px;
@@ -43,13 +44,51 @@
 .courses-types-title:after {
     content:'';
     position: absolute;
-    background-color: black;
+    display: block;
     height: 3px;
     width: 150px;
     bottom: 35px;
-    left: 517px;
+    left: 50%;
+    transform: translateX(-50%);
     border-radius: 70%;
     background-color: darkred;
+}
+
+.btn {
+    padding: 0;
+    border:px solid #FFFFFF; -webkit-border-radius: px; -moz-border-radius: px;border-radius: px;width:px;font-size:px;font-family:arial, helvetica, sans-serif; text-decoration:none; display:inline-block; color: #000000;
+    background-color: #f2f5f6; background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f5f6), to(#c8d7dc));
+    background-image: -webkit-linear-gradient(top, #f2f5f6, #c8d7dc);
+    background-image: -moz-linear-gradient(top, #f2f5f6, #c8d7dc);
+    background-image: -ms-linear-gradient(top, #f2f5f6, #c8d7dc);
+    background-image: -o-linear-gradient(top, #f2f5f6, #c8d7dc);
+    background-image: linear-gradient(to bottom, #f2f5f6, #c8d7dc);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#f2f5f6, endColorstr=#c8d7dc);
+
+}
+
+.courses-types-option {
+    text-align: center;
+    height: 250px;
+}
+
+.vertical-align {
+    transform: translateY(50%);
+    top: 50%;
+}
+
+.courses-types-option-styling {
+    font-size: 30px;
+    display: inline-block;
+}
+
+.courses-types-paragraph-styling {
+    font-size: 20px;
+    text-align: center;
+    padding: 15px 30px;
+}
+
+.ikon {
+    display: inline-block;
 }
 
 .container {
@@ -83,8 +122,8 @@
     float: left;
     position: relative;
     min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 0;
+    padding-left: 0;
     outline: 1px solid red;
 }
 

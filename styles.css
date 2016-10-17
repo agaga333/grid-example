@@ -2,11 +2,62 @@
     box-sizing: border-box;
 }
 
+.header {
+    /*background-image:url('../images-grid/doyouspeak.jpg');*/
+    background-color: grey;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+
+
+.navigation {
+    position: fixed;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+}
+
+.menu {
+    padding: 20px;
+    font-size: 20px;
+}
+
+.header-quotation {
+    padding: 400px 0;
+    color: #fff;
+    font-size: 50px;
+    line-height: 70px;
+}
+
+.courses-types {
+
+}
+
+.courses-types-title{
+    font-size: 30px;
+    text-align:center;
+    padding: 30px 0 60px 0;
+}
+
+.courses-types-title:after {
+    content:'';
+    position: absolute;
+    background-color: black;
+    height: 3px;
+    width: 150px;
+    bottom: 35px;
+    left: 517px;
+    border-radius: 70%;
+    background-color: darkred;
+}
+
 .container {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 .container-fluid {

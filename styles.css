@@ -2,12 +2,40 @@
     box-sizing: border-box;
 }
 
+.header {
+    background-image:url('images-grid/english.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    height: 100vh;
+}
+
 .navbar {
     position: fixed;
     left:0;
     right:0;
     background-color: darkred;
     z-index: 100;
+}
+
+.nav-image{
+    width: 60px;
+    height: 35px;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .list-inline {
@@ -34,21 +62,6 @@
     color: #fff;
 }
 
-.header {
-    background-image:url('images-grid/english.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    height: 100vh;
-}
-
-.list-inline li {
-    display: inline-block;
-}
-
-
 .header-quotation {
     padding: 275px 0;
     color: darkred;
@@ -58,7 +71,30 @@
 }
 
 .courses-types {
+}
 
+.courses-types-option {
+    text-align: center;
+    height: 300px;
+}
+
+.course-title {
+    padding-top: 75px;
+    font-size: 30px;
+}
+
+.course-description {
+    font-size: 20px;
+    text-align: center;
+    padding: 25px 40px;
+}
+
+.course-icon {
+    font-size: 50px;
+}
+
+.courses-type-size {
+    padding-bottom: 50px;
 }
 
 .courses-types-title{
@@ -89,83 +125,13 @@
     color: darkred;
 }
 
-.link-materials {
-    text-decoration: none;
-    color: #000;
-}
-
-.link-materials:hover {
-    text-decoration: none;
-    color: darkred;
-}
-
-.courses-types-option {
-    text-align: center;
-    height: 300px;
-}
-
-.course-title {
-    padding-top: 75px;
-    font-size: 30px;
-}
-
-.course-description {
-    font-size: 20px;
-    text-align: center;
-    padding: 25px 40px;
-}
-
-.course-icon {
-    font-size: 50px;
-}
-
-.english-description {
-
-}
-
-.container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-}
-
-.container-fluid {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.row {
-    margin-right: -15px;
-    margin-left: -15px;
-}
-
-.row:after,
-.container:after {
-    clear: both;
-    display: block;
-    content:'';
-}
-
-[class^="col-"] {
-    float: left;
-    position: relative;
-    min-height: 1px;
-    padding-right: 0;
-    padding-left: 0;
-    /*outline: 1px solid red;*/
-}
-
 .english-incentive {
     background-color: lightcyan;
 }
 
 .english-title {
     padding: 75px 40px 60px 40px;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .english-title:after {
@@ -173,8 +139,8 @@
     position: absolute;
     display: block;
     height: 3px;
-    width: 200px;
-    left: 175px;
+    width: 250px;
+    left: 225px;
     bottom: 550px;
     transform: translateX(-50%);
     border-radius: 70%;
@@ -204,7 +170,8 @@
 }
 
 .english-materials {
-    background-color: lightcyan
+    background-color: lightcyan;
+    padding-bottom: 50px;
 }
 
 .material-option {
@@ -219,9 +186,66 @@
     margin-bottom: 75px;
 }
 
+.link-materials {
+    text-decoration: none;
+    color: #000;
+}
+
+.link-materials:hover {
+    text-decoration: none;
+    color: darkred;
+}
+
+.summary {
+    background-image:url('images-grid/london.jpg');
+    background-size: 100% 600px;
+    height: 600px;
+}
+
+.summary-text {
+    font-size: 50px;
+    color: #fff;
+    padding: 75px;
+    text-shadow: 2px 2px #ff0000;
+}
+
 .footer {
     background-color: darkred;
- }
+}
+
+.footer-title {
+    color: #fff;
+    font-size: 25px;
+    padding: 50px 0 30px 0;
+}
+
+.contact-details {
+    color: #fff;
+    padding: 0 0 50px 0;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.row:after,
+.container:after {
+    clear: both;
+    display: block;
+    content:'';
+}
+
+[class^="col-"] {
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 0;
+    padding-left: 0;
+    /*outline: 1px solid red;*/
+}
 
 .col-xs-1 {
      width: 8.3333333%

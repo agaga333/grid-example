@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Lekcje języka angielskiego</title>
     <link rel="stylesheet" href="reset.css">
-    <script src="https://use.fontawesome.com/3e66d9863e.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,17 +13,17 @@
             <nav class="navbar">
                 <div class="container">
                     <ul class="list-inline">
-                        <li><a href="#" class="link-nav">Ikona</a></li>
-                        <li><a href="#" class="link-nav">Start</a></li>
-                        <li><a href="#" class="link-nav">Courses</a></li>
-                        <li><a href="#" class="link-nav">English</a></li>
-                        <li><a href="#" class="link-nav">Materials</a></li>
-                        <li><a href="#" class="link-nav">Contact</a></li>
+                        <li><img src='images-grid/heart.JPG' class="nav-image"></li>
+                        <li><a href="#start" class="link-nav">Start</a></li>
+                        <li><a href="#courses" class="link-nav">Courses</a></li>
+                        <li><a href="#english" class="link-nav">English</a></li>
+                        <li><a href="#materials" class="link-nav">Materials</a></li>
+                        <li><a href="#contact" class="link-nav">Contact</a></li>
                     </ul>
                 </div>
             </nav>
 
-        <div class="jumbotron">
+        <div class="jumbotron" id="start">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
@@ -33,14 +33,15 @@
             </div>
         </div>
     </header>
-    <div class="main">
+
+    <div class="main" id="courses">
         <div class="container">
             <div class="courses-types row">
                 <div class="col-xs-12">
                     <h2 class="courses-types-title">Types of Courses</h2>
                 </div>
             </div>
-            <div class="courses-types row">
+            <div class="courses-types row courses-type-size">
                 <div class="col-xs-12 col-md-4">
                     <a href="#" class="link-course-type">
                         <div class="courses-types-option">
@@ -90,8 +91,9 @@
                     </a>
                 </div>
             </div>
-            </div>
-        <div class="english-incentive">
+        </div>
+
+        <div class="english-incentive" id="english">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
@@ -103,7 +105,7 @@
                         <p class="english-description">Fortunately, English uses Latin alphabet like Polish, so there is no need to learn letters from the beginning.
                             Some languages use other alphabets, such as: Russian - Cyrilic or Chinese - Symbols
                         </p>
-                        <p class="english-description">Moreover, in English the words do not conjugate! You do not have to know the cases or distinguish between masculine,
+                        <p class="english-description" id="materials">Moreover, in English the words do not conjugate! You do not have to know the cases or distinguish between masculine,
                             feminine or neutral gender.The only thing you have to know after memorizing the word is how to create plural
                             f.ex. a cat - the cats.
                         </p>
@@ -112,58 +114,57 @@
                 </div>
             </div>
         </div>
+
         <div class="english-materials">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-3 material-border">
-                        <a href="#" class="link-materials"><h5 class="material-option">Grammar</h5></a>
+                        <a href="#" class="link-materials"><h5 class="material-option">Grammar Activities</h5></a>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-3 material-border">
                         <a href="#" class="link-materials"><h5 class="material-option">Vocabulary</h5></a>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-3 material-border">
-                        <a href="#" class="link-materials"><h5 class="material-option">Listening</h5></a>
+                        <a href="#" class="link-materials"><h5 class="material-option">Listening Activities</h5></a>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-3 material-border">
                         <a href="#" class="link-materials"><h5 class="material-option">English for kids</h5></a>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3 material-border">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 material-border">
+                        <a href="#" class="link-materials"><h5 class="material-option">Business English</h5></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 material-border">
+                        <a href="#" class="link-materials"><h5 class="material-option">Polish for Foreigners</h5></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 material-border">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="summary" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p class="summary-text">It's easy if you try!</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
     <footer class="footer">
         <div class="container">
-fsdaf<br>dASD<br>
-        fsdaf<br>dASD<br>
-        fsdaf<br>dASD<br>
-        fsdaf<br>dASD<br>
-        fsdaf<br>dASD<br>
-        fsdaf<br>dASD<br>fsdaf<br>dASD<br>
-        fsdaf<br>dASD<br>
-        fsdaf<br>dASD<br>
-
+            <div class="col-xs-12">
+                <h6 class="footer-title">If you have any questions do not hesitate to contact me:)</h6>
+                <p class="contact-details">Phone number:<br> E-mail:</p>
+            </div>
         </div>
     </footer>
-
-
-      <!--  <div class="row">
-            <div class="col-sm-4 col-xs-12 col-md-6">
-                <div class="row">
-                    <div class="col-sm-8">bla bla</div>
-                    <div class="col-sm-4">bla bla</div>
-                </div>
-            </div>
-            <div class="col-sm-4 col-xs-12 col-md-6">2</div>
-            <div class="col-sm-4 col-xs-12 col-md-6">3</div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6 col-xs-12 col-md-3">1</div>
-            <div class="col-sm-6 col-xs-12 col-md-3">2</div>
-            <div class="col-sm-6 col-xs-12 col-md-3">3</div>
-            <div class="col-sm-6 col-xs-12 col-md-3">4</div>
-        </div> -->
-
-
 
 </body>
 </html>

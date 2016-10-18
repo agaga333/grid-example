@@ -3,7 +3,7 @@
 }
 
 .header {
-    background-image:url('images-grid/doyouspeak.jpg');
+    background-image:url('images-grid/english.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -12,23 +12,17 @@
     height: 100vh;
 }
 
-.navigation {
-    position: fixed;
-    text-align: center;
-    color: #fff;
-    width: 100%;
+.list-inline li {
+    display: inline-block;
 }
 
-.menu {
-    padding: 20px;
-    font-size: 20px;
-}
 
 .header-quotation {
-    padding: 325px 0;
-    color: #fff;
-    font-size: 50px;
-    line-height: 70px;
+    padding: 275px 0;
+    color: darkred;
+    font-size: 70px;
+    font-style: italic;
+    line-height: 85px;
 }
 
 .courses-types {
@@ -36,7 +30,7 @@
 }
 
 .courses-types-title{
-    font-size: 30px;
+    font-size: 40px;
     text-align:center;
     padding: 30px 0 60px 0;
 }
@@ -54,41 +48,42 @@
     background-color: darkred;
 }
 
-.btn {
-    padding: 0;
-    border:px solid #FFFFFF; -webkit-border-radius: px; -moz-border-radius: px;border-radius: px;width:px;font-size:px;font-family:arial, helvetica, sans-serif; text-decoration:none; display:inline-block; color: #000000;
-    background-color: #f2f5f6; background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f5f6), to(#c8d7dc));
-    background-image: -webkit-linear-gradient(top, #f2f5f6, #c8d7dc);
-    background-image: -moz-linear-gradient(top, #f2f5f6, #c8d7dc);
-    background-image: -ms-linear-gradient(top, #f2f5f6, #c8d7dc);
-    background-image: -o-linear-gradient(top, #f2f5f6, #c8d7dc);
-    background-image: linear-gradient(to bottom, #f2f5f6, #c8d7dc);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#f2f5f6, endColorstr=#c8d7dc);
+.link-course-type {
+    text-decoration: none;
+    color: #000;
+}
 
+.link-course-type:hover {
+    color: darkred;
+}
+
+.link-materials {
+    text-decoration: none;
+    color: #000;
 }
 
 .courses-types-option {
     text-align: center;
-    height: 250px;
+    height: 300px;
 }
 
-.vertical-align {
-    transform: translateY(50%);
-    top: 50%;
-}
-
-.courses-types-option-styling {
+.course-title {
+    padding-top: 75px;
     font-size: 30px;
-    display: inline-block;
 }
 
-.courses-types-paragraph-styling {
+.course-description {
     font-size: 20px;
     text-align: center;
-    padding: 15px 30px;
+    padding: 25px 40px;
 }
 
-.ikon {
-    display: inline-block;
+.course-icon {
+    font-size: 50px;
+}
+
+.english-description {
+
 }
 
 .container {
@@ -127,20 +122,58 @@
     outline: 1px solid red;
 }
 
-.orange {
-    background-color: darkorange;
-}
-
-.green {
+.english-incentive {
     background-color: yellowgreen;
 }
 
-.blue {
-    background-color: dodgerblue;
+.english-title {
+    padding: 75px 40px 60px 40px;
+    font-size: 30px;
 }
 
-.grey {
+.english-title:after {
+    content:'';
+    position: absolute;
+    display: block;
+    height: 3px;
+    width: 200px;
+    left: 175px;
+    bottom: 550px;
+    transform: translateX(-50%);
+    border-radius: 70%;
+    background-color: darkred;
+}
+
+.english-description {
+    padding:20px 40px;
+    font-size: 20px;
+    line-height:25px;
+}
+
+.english-description:first-letter {
+    color: darkred;
+    font-size: xx-large;
+}
+
+.english-description-materials {
+    padding: 40px 40px 75px 40px;
+    font-size: 25px;
+    line-height:25px;
+}
+
+.english-description-materials:first-letter {
+    font-size: xx-large;
+    color: darkred;
+}
+
+.english-materials {
     background-color: lightgrey;
+}
+
+.material-option {
+    text-align: center;
+    padding: 100px 0;
+    font-size: 25px;
 }
 
 .col-xs-1 {

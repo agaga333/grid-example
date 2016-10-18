@@ -3,122 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <title>Lekcje języka angielskiego</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="reset.css">
     <script src="https://use.fontawesome.com/3e66d9863e.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="header">
-        <div class="navigation">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-2 col-xs-12"><h1 class="menu">Ikona</h1></div>
-                    <div class="col-md-2 col-xs-12"><h1 class="menu">Start</h1></div>
-                    <div class="col-md-2 col-xs-12"><h1 class="menu">Courses</h1></div>
-                    <div class="col-md-2 col-xs-12"><h1 class="menu">English</h1></div>
-                    <div class="col-md-2 col-xs-12"><h1 class="menu">Materials</h1></div>
-                    <div class="col-md-2 col-xs-12"><h1 class="menu">Contact</h1></div>
-                </div>
-            </div>
+        <div class="container"> <!--jedyny poprawny sposób definiowania nawigacji -->
+            <nav>
+                <ul class="list-inline">
+                    <li>Ikona</li>
+                    <li>Start</li>
+                    <li>Courses</li>
+                    <li>English</li>
+                    <li>Materials</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
         </div>
+
         <div class="jumbotron">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12"><h1 class="header-quotation">"The limits of my language<br>are the limits of my world"</h1></div>
+                    <div class="col-xs-12">
+                        <h1 class="header-quotation">"The limits of my language<br>are the limits of my world"</h1>
+                    </div>
                 </div>
             </div>
     </header>
-    <div class="content">
+    <div class="main">
         <div class="container">
-
             <div class="courses-types row">
-                <div class="col-xs-12"><h1 class="courses-types-title">Types of Courses</h1></div>
-            </div>
-            <div class="courses-types row">
-                <div class="col-xs-12 col-sm-12 col-md-4"><button class="btn">
-                    <div class="courses-types-option">
-                        <div class="vertical-align">
-                            <div class="ikon"><i class="fa fa-graduation-cap" aria-hidden="true" style="font-size: 50px"></i></div>
-                            <h1 class="courses-types-option-styling">Help at School</h1>
-                            <p class="courses-types-paragraph-styling">Individual courses for children and teenagers in school age</p>
-                        </div>
-                    </div>
-                </button>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-4"><button class="btn">
-                    <div class="courses-types-option">
-                        <div class="vertical-align">
-                            <div class="ikon"><i class="fa fa-briefcase" aria-hidden="true" style="font-size: 50px"></i></div>
-                            <h1 class="courses-types-option-styling">General English</h1>
-                            <p class="courses-types-paragraph-styling">Individual courses for adults, all levels available</p>
-                        </div>
-                    </div>
-                </button>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-4"><button class="btn">
-                    <div class="courses-types-option">
-                        <div class="vertical-align">
-                            <div class="ikon"><i class="fa fa-comments" aria-hidden="true" style="font-size: 50px"></i></div>
-                            <h1 class="courses-types-option-styling">Conversations</h1>
-                            <p class="courses-types-paragraph-styling">Speaking courses which aim to improve communication skills</p>
-                        </div>
-                    </div>
-                </button>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-4"><button class="btn">
-                    <div class="courses-types-option">
-                        <div class="vertical-align">
-                            <div class="ikon"><i class="fa fa-building" aria-hidden="true" style="font-size: 50px"></i></div>
-                            <h1 class="courses-types-option-styling">Business English</h1>
-                            <p class="courses-types-paragraph-styling">English suited to international trade, commerce and finance</p>
-                        </div>
-                    </div>
-                </button>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-4"><button class="btn">
-                    <div class="courses-types-option">
-                        <div class="vertical-align">
-                            <div class="ikon"><i class="fa fa-flag" aria-hidden="true" style="font-size: 50px"></i></div>
-                            <h1 class="courses-types-option-styling">Polish for Foreigners</h1>
-                            <p class="courses-types-paragraph-styling">Intensive Polish course suited to nationality of student</p>
-                        </div>
-                    </div>
-                </button>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-4"><button class="btn">
-                    <div class="courses-types-option">
-                        <div class="vertical-align">
-                            <div class="ikon"><i class="fa fa-envelope" aria-hidden="true" style="font-size: 50px"></i></div>
-                            <h1 class="courses-types-option-styling">Lessons via Skype</h1>
-                            <p class="courses-types-paragraph-styling">Courses prepared specially for e-learning scheme</p>
-                        </div>
-                    </div>
-                </button>
-                </div>
-            </div>
-
-            <div class="row green">
                 <div class="col-xs-12">
-                    <h1>Why English is easy?</h1>
-                    <p>First of all, you know more English words than you think:)<br>
-                    Do you know the meaning of the words below:<br>
-                        plan, map, president, start, stop, sport, history, biology, museum, intense, intelligent, capitalism, business, computer, toilet, bus, taxi, port, scandal, corruption, optic, illusion, mango, paper, machine, doctor, university, park, monument, training, restaurant, hotel, bar etc.
-                    </p>
-                    <p>Fortunately, English uses Latin alphabet like Polish, so there is no need to learn letters from the beginning. Some languages use other alphabets, such as: Russian - Cyrilic or Chinese - Symbols </p>
-                    <p>Moreover, in English the words do not conjugate! You do not have to know the cases or distinguish between masculine, feminine or neutral gender.
-                    The only thing you have to know after memorizing the word is how to create plural f.ex. a cat - the cats. </p>
-
+                    <h2 class="courses-types-title">Types of Courses</h2>
                 </div>
             </div>
-            <div class="row grey">
-                <div class="col-xs-12 col-sm-6 col-md-3">Grammar</div>
-                <div class="col-xs-12 col-sm-6 col-md-3">Vocabulary</div>
-                <div class="col-xs-12 col-sm-6 col-md-3">Listening</div>
-                <div class="col-xs-12 col-sm-6 col-md-3">English for kids</div>
+            <div class="courses-types row">
+                <div class="col-xs-12 col-md-4">
+                    <a href="#" class="link-course-type">
+                        <div class="courses-types-option">
+                            <h3 class="course-title"><i class="fa fa-graduation-cap course-icon" aria-hidden="true"></i>Help at School</h3>
+                            <p class="course-description">Individual courses for children and teenagers in school age</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <a href="#" class="link-course-type">
+                        <div class="courses-types-option">
+                            <h3 class="course-title"><i class="fa fa-briefcase course-icon" aria-hidden="true"></i>General English</h3>
+                            <p class="course-description">Individual courses for adults, all levels available</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <a href="#" class="link-course-type">
+                        <div class="courses-types-option">
+                            <h3 class="course-title"><i class="fa fa-comments course-icon" aria-hidden="true"></i>Conversations</h3>
+                            <p class="course-description">Speaking courses which aim to improve communication skills</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <a href="#" class="link-course-type">
+                        <div class="courses-types-option">
+                            <h3 class="course-title"><i class="fa fa-building course-icon" aria-hidden="true"></i>Business English</h3>
+                            <p class="course-description">English suited to international trade, commerce and finance</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <a href="#" class="link-course-type">
+                        <div class="courses-types-option">
+                            <h3 class="course-title"><i class="fa fa-flag course-icon" aria-hidden="true"></i>Polish for Foreigners</h3>
+                            <p class="course-description">Intensive Polish course suited to nationality of student</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4">
+                    <a href="#" class="link-course-type">
+                        <div class="courses-types-option">
+                            <h3 class="course-title"><i class="fa fa-envelope course-icon" aria-hidden="true"></i>Lessons via Skype</h3>
+                            <p class="course-description">Courses prepared specially for<br> e-learning scheme</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            </div>
+        <div class="english-incentive">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h4 class="english-title">Why English is easy?</h4>
+                        <p class="english-description">First of all, you know more English words than you think:)<br>
+                        Do you know the meaning of the words below:<br>plan, map, president, start, stop, sport, history,
+                            biology, museum, intense, intelligent, capitalism, business, computer, toilet, bus, taxi, port, scandal, corruption, optic, illusion, mango, paper, machine, doctor, university, park, monument, training, restaurant, hotel, bar etc.
+                        </p>
+                        <p class="english-description">Fortunately, English uses Latin alphabet like Polish, so there is no need to learn letters from the beginning.
+                            Some languages use other alphabets, such as: Russian - Cyrilic or Chinese - Symbols
+                        </p>
+                        <p class="english-description">Moreover, in English the words do not conjugate! You do not have to know the cases or distinguish between masculine,
+                            feminine or neutral gender.The only thing you have to know after memorizing the word is how to create plural
+                            f.ex. a cat - the cats.
+                        </p>
+                        <p class="english-description-materials">Below, you will find a bunch of materials that will make your adventure with English easier:</p>
+                    </div>
+                </div>
+            </div>
+        <div class="english-materials">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <a href="#" class="link-materials"><h5 class="material-option">Grammar</h5></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <a href="#" class="link-materials"><h5 class="material-option">Vocabulary</h5></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <a href="#" class="link-materials"><h5 class="material-option">Listening</h5></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <a href="#" class="link-materials"><h5 class="material-option">English for kids</h5></a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <footer>
+fsdaf<br>dASD<br>
+        fsdaf<br>dASD<br>
+        fsdaf<br>dASD<br>
+        fsdaf<br>dASD<br>
+        fsdaf<br>dASD<br>
+        fsdaf<br>dASD<br>fsdaf<br>dASD<br>
+        fsdaf<br>dASD<br>
+        fsdaf<br>dASD<br>
+
+
+
 
     </footer>
 

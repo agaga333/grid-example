@@ -2,6 +2,26 @@
     box-sizing: border-box;
 }
 
+.list-inline {
+    float: right;
+    list-style: none;
+    width: 100%;
+}
+
+.list-inline li {
+    float: left;
+    padding: 10px 20px;
+    width: 16.6666666%;
+    text-align: center;
+}
+
+.list-inline li a {
+    color: #000;
+    text-decoration: none;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
 .header {
     background-image:url('images-grid/english.jpg');
     background-size: cover;

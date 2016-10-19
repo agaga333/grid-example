@@ -3,30 +3,78 @@
  */
 var names = ['John','Mike','Jessica','Jane','Adam','Luke','Thomas','Brian','Julia','Jenifer'];
 //1//
-for (var i = 0; i < names.length; i++) {
-    console.log(names[i] + " " + [i]);
+
+function displayNames(array) {
+    for (var i = 0; i < array.length; i++) {
+        console.log(array[i] + " " + i);
+    }
 }
 
 //2//
-for (var i = 0; i < names.lentgh; i++) {
-    console.log(names[i].toUpperCase());
+
+//nadpisanie tablicy//
+
+function convertUpper (array) {
+    for (var i = 0; i < array.length; i++) {
+        array[i] = array[i].toUpperCase();
+    }
+    return array; // Return kończy działanie funkcji //
+    console.log("convertUpper");
 }
 
-//3//
+//zostaje names, tworzymy nową tablicę//
 
-console.log("No fucking idea")
+function convertUpperCase(array) {
+    var upperCaseNames = array;
+    console.log(upperCaseNames);
+    for (var i = 0; i < upperCaseNames.length; i++) {
+        upperCaseNames[i] = upperCaseNames[i].toUpperCase();
+    }
+    return upperCaseNames;
+}
+
 
 //4//
 
-var arrayLength = names.length;
-console.log(arrayLength);
+function hasOnlyStrings(array) {
+    for (var i = 0; i < array.length; i++) {
+        if (typeof(array[i]) !== "string") { //negacja//
+            console.log(array[i] + typeof(array[i]) + i + "Not a string!!!");
+        }
+        //linijka wolna!!//
+        else {
+            console.log("Every element is a string");
+        }
+    }
+}
+
 
 //5//
 
-console.log(names.join());
+function checkLength(array) {
+    return array.length;
+}
 
 //6//
 
-for (var i = 0; i < names.length; i++) {
-    console.log(names[i] + " is number " + [i]);
+function concateElements(array) {
+    var emptyString = "";
+    for (var i = 0; i < array.length; i++) {
+        emptyString =+ array[i]; //=+ oznacza, że emptyString zachowuje poprzednią wartość w kolejnej iteracji//
+    }
+    return emptyString;
 }
+
+//7//
+
+function showIndex(array) {
+    for (var i = 0; i < array.length; i++) {
+       array[i] = array[i] + " is number " + i;
+    }
+}
+
+//displayNames(names);//
+convertUpperCase(names);
+//hasOnlyStrings(names);//
+checkLength(names);
+concateElements(names);

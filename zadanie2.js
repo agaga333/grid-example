@@ -84,14 +84,14 @@ function isRandomNumber() {
 
 
 
-showHigherValue(9, 5);
-roundoffDown(1.656454);
-roundoffUp(1.656454);
-StringToNumber("55");
-calculateDelta(5, 4, 1);
-ifNumber(26);
-baseToPower(2, 3);
-roundoffTwoDigit(2.54545646);
-isSquareRoot(4);
-highestAbsoluteValue (-7, 8, -9);
-isRandomNumber();
+console.log(showHigherValue(9, 5));
+console.log(roundoffDown(1.656454));
+console.log(roundoffUp(1.656454));
+console.log(StringToNumber("55"));
+console.log(calculateDelta(5, 4, 1));
+console.log(ifNumber(26));
+console.log(baseToPower(2, 3));
+console.log(roundoffTwoDigit(2.54545646));
+console.log(isSquareRoot(4));
+console.log(highestAbsoluteValue (-7, 8, -9));
+console.log(isRandomNumber());

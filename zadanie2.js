@@ -5,7 +5,7 @@
 
 
 function showHigherValue(firstNumber, secondNumber) {
-    return firstNumber > secondNumber
+    return firstNumber > secondNumber;
 }
 
 //2//
@@ -29,12 +29,12 @@ function stringToNumber(value) {
     else {
         return parseInt(value);
     }
-};
+}
 
 //5//
 
 function calculateDelta(a, b, c) {
-    return Math.pow(b, 2)-4 * a * c;
+    return Math.pow(b, 2) - 4 * a * c;
 }
 
 //6//
@@ -53,7 +53,7 @@ function baseToPower(x, y) {
 
 function roundoffTwoDigit(number) {
     return parseFloat(number.toFixed(2));
-};
+}
 
 //9//
 
@@ -63,14 +63,14 @@ function isSquareRoot(number) {
 
 //10//
 
-function highestAbsoluteValue(firstNumber,secondNumber, thirdNumber) {
+function highestAbsoluteValue(firstNumber, secondNumber, thirdNumber) {
     return Math.max(Math.abs(firstNumber), Math.abs(secondNumber), Math.abs(thirdNumber));
-};
+}
 
 //11//
 
 function isRandomNumber() {
-    return Math.random()
+    return Math.random();
 }
 
 

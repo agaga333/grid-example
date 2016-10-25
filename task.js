@@ -2,7 +2,7 @@
  * Created by Agnieszka on 2016-10-19.
  */
 var names = ['John','Mike','Jessica','Jane','Adam','Luke','Thomas','Brian','Julia','Jenifer'];
-//1//
+//0//
 
 function displayNames(array) {
     for (var i = 0; i < array.length; i++) {
@@ -10,7 +10,7 @@ function displayNames(array) {
     }
 }
 
-//2//
+//1//
 
 //nadpisanie tablicy//
 
@@ -33,8 +33,17 @@ function convertUpperCase(array) {
     return upperCaseNames;
 }
 
+//2//
 
-//4//
+function convertLower (array) {
+    for (var i = 0; i < array.length; i++) {
+        array[i] = array[i].toLowerCase();
+    }
+    return array; // Return kończy działanie funkcji //
+    console.log("convertLower");
+}
+
+//3//
 
 function hasOnlyStrings(array) {
     for (var i = 0; i < array.length; i++) {
@@ -49,23 +58,24 @@ function hasOnlyStrings(array) {
 }
 
 
-//5//
+//4//
 
 function checkLength(array) {
     return array.length;
 }
 
-//6//
+//5//
 
 function concateElements(array) {
     var emptyString = "";
     for (var i = 0; i < array.length; i++) {
-        emptyString =+ array[i]; //=+ oznacza, że emptyString zachowuje poprzednią wartość w kolejnej iteracji//
+        emptyString += array[i]; //=+ oznacza, że emptyString zachowuje poprzednią wartość w kolejnej iteracji//
     }
     return emptyString;
 }
 
-//7//
+
+//6//
 
 function showIndex(array) {
     for (var i = 0; i < array.length; i++) {
@@ -73,8 +83,15 @@ function showIndex(array) {
     }
 }
 
-//displayNames(names);//
-convertUpperCase(names);
-//hasOnlyStrings(names);//
+//czy to nie jest nadpisanie array?//
+//czemu nie działa?//
+
+displayNames(names);
+
+hasOnlyStrings(names);
 checkLength(names);
 concateElements(names);
+showIndex(names);
+
+//to upper case - obydwie funkcje nadpisują array!//
+//jak zrobić, żeby hasOnlyString nie wyświetlała obydwu komend w przypadku dodania liczby do array//

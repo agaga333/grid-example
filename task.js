@@ -80,18 +80,18 @@ function concateElements(array) {
 function showIndex(array) {
     for (var i = 0; i < array.length; i++) {
        array[i] = array[i] + " is number " + i;
-    }
+    } return array;
 }
 
 //czy to nie jest nadpisanie array?//
 //czemu nie działa?//
 
-displayNames(names);
+//displayNames(names);
 
-hasOnlyStrings(names);
-checkLength(names);
-concateElements(names);
-showIndex(names);
+//hasOnlyStrings(names);
+//checkLength(names);
+//concateElements(names);
+//showIndex(names);//
 
 //to upper case - obydwie funkcje nadpisują array!//
 //jak zrobić, żeby hasOnlyString nie wyświetlała obydwu komend w przypadku dodania liczby do array//

@@ -28,8 +28,8 @@ console.log(countriesNames);
 
 function getPopulationSum() {
     var populationSum = 0;
-    for (var i = 0; i < countries.length; i++) {
-        populationSum = populationSum + countries[i].population;
+    for (var i = 0; len = countries.length; i < len; i++) {
+        populationSum += countries[i].population //populationSum = populationSum + countries[i].population;
     };
     return populationSum;
 }

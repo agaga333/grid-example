@@ -26,9 +26,12 @@ console.log(countriesNames);
 
 //3//
 
-var populationSum = 0;
-for (var i = 0; i < countries.length; i++) {
-    populationSum = populationSum + countries[i].population;
+function getPopulationSum() {
+    var populationSum = 0;
+    for (var i = 0; i < countries.length; i++) {
+        populationSum = populationSum + countries[i].population;
+    };
+    return populationSum;
 }
 
-console.log(populationSum)
+console.log(getPopulationSum())

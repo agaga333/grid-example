@@ -9,7 +9,11 @@ console.log(input);
 console.log(addBtn);
 console.log(content);
 
-content.innerHTML = "hello world";
-document.getElementById("addBtn").addEventListener("click", function(){
-    alert("Hello World!");
-});
+//content.innerHTML = "hello world";//
+
+function addText(){
+    content.innerHTML = input.value;
+    content.style.backgroundColor = input.value;
+}
+
+addBtn.addEventListener("click", addText);

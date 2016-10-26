@@ -28,10 +28,20 @@ console.log(countriesNames);
 
 function getPopulationSum() {
     var populationSum = 0;
-    for (var i = 0; len = countries.length; i < len; i++) {
+    for (var i = 0; len = countries.length, i < len; i++) {
         populationSum += countries[i].population //populationSum = populationSum + countries[i].population;
     };
     return populationSum;
 }
 
 console.log(getPopulationSum())
+
+//4//
+
+var now = new Date();
+var weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+var day = now.getDay();
+
+function getWeekDay() {
+    return weekDays(day);
+}

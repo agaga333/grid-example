@@ -23,3 +23,12 @@ function getNames(country) {
 
 var countriesNames = countries.map(getNames);
 console.log(countriesNames);
+
+//3//
+
+var populationSum = 0;
+for (var i = 0; i < countries.length; i++) {
+    populationSum = populationSum + countries[i].population;
+}
+
+console.log(populationSum)

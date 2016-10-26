@@ -38,10 +38,12 @@ console.log(getPopulationSum())
 
 //4//
 
-var now = new Date();
-var weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-var day = now.getDay();
 
 function getWeekDay() {
+    var now = new Date();
+    var weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    var day = now.getDay();
     return weekDays[day];
 }
+
+console.log(getWeekDay())

@@ -7,7 +7,7 @@ function countriesShort(country) {
         nazwa: country.name,
         populacja: country.population,
         powierzchnia: country.area,
-        gęstość: country.population / country.area
+        gestosc: country.population / country.area
     };
 }
 

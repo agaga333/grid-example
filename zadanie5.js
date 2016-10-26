@@ -1,6 +1,7 @@
 /**
  * Created by Agnieszka on 2016-10-26.
  */
+//1//
 function countriesShort(country) {
     return country = {
         nazwa: country.name,
@@ -13,3 +14,12 @@ function countriesShort(country) {
 var compactCountries = countries.map(countriesShort);
 
 console.table(compactCountries);
+
+//2//
+
+function getNames(country) {
+    return country.name;
+}
+
+var countriesNames = countries.map(getNames);
+console.log(countriesNames);

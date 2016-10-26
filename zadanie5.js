@@ -43,5 +43,5 @@ var weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"
 var day = now.getDay();
 
 function getWeekDay() {
-    return weekDays(day);
+    return weekDays[day];
 }

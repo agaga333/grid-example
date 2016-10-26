@@ -10,3 +10,6 @@ console.log(addBtn);
 console.log(content);
 
 content.innerHTML = "hello world";
+document.getElementById("addBtn").addEventListener("click", function(){
+    alert("Hello World!");
+});

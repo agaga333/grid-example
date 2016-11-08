@@ -10,4 +10,4 @@ jQuery(document).ready(function() {
     });
 });
 
-// http://inspirationalpixels.com/tutorials/creating-a-responsive-menu-with-html-css-jquery
+// http://inspirationalpixels.com/tutorials/creating-a-responsive-menu-with-html-css-jquery//

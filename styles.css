@@ -14,14 +14,6 @@ body {
     height: 100vh;
 }
 
-.navbar {
-    position: fixed;
-    left:0;
-    right:0;
-    background-color: darkred;
-    z-index: 100;
-}
-
 .nav-image{
     width: 60px;
     height: 35px;
@@ -306,7 +298,7 @@ body {
 
     .navbar {
         position: relative;
-        display: inline-block;
+        width: 300px;
     }
 
     .navbar ul.active {
@@ -320,8 +312,7 @@ body {
         left: 0;
         padding: 10px 18px;
         border-radius: 3px;
-
-        background: darkred;
+        background-color: darkred;
     }
 
     .navbar ul:after {
@@ -353,16 +344,16 @@ body {
         display: inline-block;
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
         border-radius: 3px;
-        background: #303030;
+        background: darkred;
         text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
-        color: #777;
+        color: #000;
         font-size: 20px;
         transition: color linear 0.15s;
     }
 
     .toggle-nav:hover, .toggle-nav.active {
         text-decoration: none;
-        color: #66a992;
+        color: #fff;
     }
 
 }
@@ -371,6 +362,20 @@ body {
 
     .container {
         width: 750px;
+    }
+
+    .navbar {
+        transition: all 0.6s linear;
+        box-shadow: 0 2px 2px -2px #636363;
+        background-color: transparent;
+        position: fixed;
+        left:0;
+        right:0;
+        z-index: 100;
+    }
+
+    .menu-effect {
+        background-color: darkred;
     }
 
     .col-sm-1 {

@@ -1,13 +1,21 @@
 /**
  * Created by Agnieszka on 2016-11-08.
  */
-jQuery(document).ready(function() {
-    jQuery('.toggle-nav').click(function(e) {
-        jQuery(this).toggleClass('active');
-        jQuery('.navbar ul').toggleClass('active');
-
+$(document).ready(function() {
+    $('.toggle-nav').on("click", (function(e) {
         e.preventDefault();
-    });
+        $(this).toggleClass('active');
+        $('.navbar ul').toggleClass('active');
+    }));
 });
 
-// http://inspirationalpixels.com/tutorials/creating-a-responsive-menu-with-html-css-jquery//
+$(window).scroll(function() {
+    if ($(window).scrollTop() > 200) {
+        $('.navbar').addClass('menu-effect');
+    }
+    else {
+        $('.navbar').removeClass('menu-effect');
+    }
+});
+
+// http://inspirationalpixels.com/tutorials/creating-a-responsive-menu-with-html-css-jquery

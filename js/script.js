@@ -5,7 +5,11 @@ $(function() {
         addEffectHeight = 200,
         $linkNav = $('.link-nav'),
         $scrollTopBtn = $('#scroll-top-btn'),
-        $sendFormBtn = $('#send-form-btn');
+        $sendFormBtn = $('#send-form-btn'),
+        $inputName = $('#InputName'),
+        $inputEmail = $('#InputEmail'),
+        $inputMobile = $('#InputMobile'),
+        $inputTextArea = $('#InputTextArea');
 
 
     $toggleNav.on("click", (function (e) {

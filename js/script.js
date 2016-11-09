@@ -48,7 +48,7 @@ $(function() {
 
     function fetchData() {
         return $.ajax({
-            url: "../mail/mail.php",
+            url: "././mail/mail.php",
             type: "POST",
             data: {
                 name: $inputName.val(),

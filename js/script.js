@@ -47,9 +47,15 @@ $(function() {
 
     function fetchData(query) {
         return $.ajax({
-            url: "https://api.apixu.com/v1/current.json?key=" + API_KEY + "&q=" + query,
-            type: "POST"
-        });
+            url: "../mail/mail.php",
+            type: "POST",
+            data: {
+                name: $inputName.val(),
+                email: $inputEmail.val(),
+                phone: $inputMobile.val(),
+                message: $inputTextArea.val()
+            }
+        })
     }
 
     function sendMessage(query) {

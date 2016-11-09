@@ -9,7 +9,8 @@ $(function() {
         $inputName = $('#InputName'),
         $inputEmail = $('#InputEmail'),
         $inputMobile = $('#InputMobile'),
-        $inputTextArea = $('#InputTextArea');
+        $inputTextArea = $('#InputTextArea'),
+        $form = $('#form');
 
 
     $toggleNav.on("click", (function (e) {
@@ -64,6 +65,8 @@ $(function() {
         })}
 
     $sendFormBtn.on("click", sendMessage);
+
+    $form.on('submit', sendMessage);
 
 
 

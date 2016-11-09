@@ -214,7 +214,7 @@ body {
     text-align: center;
     font-size: 60px;
     position: fixed;
-    bottom: -70px;
+    bottom: -100px;
     right: 30px;
     transition: all 1s ease;
     color: #000;
@@ -231,6 +231,7 @@ body {
 
 .footer {
     background-color: darkred;
+    padding-bottom: 70px;
 }
 
 .footer-title {
@@ -244,6 +245,11 @@ body {
     padding: 0 0 50px 0;
     font-size: 20px;
     line-height: 30px;
+}
+
+.form-group {
+    color: #fff;
+    font-size: 16px;
 }
 
 .row {

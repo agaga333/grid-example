@@ -1,11 +1,14 @@
 $(function() {
 
     var $navbar = $('.navbar'),
+        $toggleNav = $('.toggle-nav'),
         addEffectHeight = 200,
         $linkNav = $('.link-nav'),
-        $scrollTopBtn = $('#scroll-top-btn');
+        $scrollTopBtn = $('#scroll-top-btn'),
+        $sendFormBtn = $('#send-form-btn');
 
-    $('.toggle-nav').on("click", (function (e) {
+
+    $toggleNav.on("click", (function (e) {
         e.preventDefault();
         $(this).toggleClass('active');
         $('.navbar ul').toggleClass('active');
@@ -37,6 +40,20 @@ $(function() {
             }, 1000);
         }
     });
+
+    function fetchData(query) {
+        return $.ajax({
+            url: "https://api.apixu.com/v1/current.json?key=" + API_KEY + "&q=" + query,
+            type: "POST"
+        });
+    }
+
+    function sendMessage(query) {
+        fetchData(query).then(function(response) {
+
+        })}
+
+    $sendFormBtn.on("click", sendMessage);
 
 
 

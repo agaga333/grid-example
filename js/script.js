@@ -46,7 +46,7 @@ $(function() {
         }
     });
 
-    function fetchData(query) {
+    function fetchData() {
         return $.ajax({
             url: "../mail/mail.php",
             type: "POST",
@@ -59,12 +59,10 @@ $(function() {
         })
     }
 
-    function sendMessage(query) {
-        fetchData(query).then(function(response) {
-
+    function sendMessage() {
+        fetchData().then(function(response) {
+            console.log(response);
         })}
-
-    $sendFormBtn.on("click", sendMessage);
 
     $form.on('submit', sendMessage);
 

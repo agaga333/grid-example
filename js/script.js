@@ -3,8 +3,7 @@ $(function() {
     var $navbar = $('.navbar'),
         addEffectHeight = 200,
         $linkNav = $('.link-nav'),
-        $goTop = $('.go-top'),
-        $scrollTop = $('#scroll-top');
+        $scrollTopBtn = $('#scroll-top-btn');
 
     $('.toggle-nav').on("click", (function (e) {
         e.preventDefault();
@@ -15,19 +14,19 @@ $(function() {
     $(window).scroll(function () {
         if ($(window).scrollTop() > addEffectHeight) {
             $navbar.addClass('menu-effect');
-            $goTop.addClass("show");
+            $scrollTopBtn.addClass("show");
         }
         else {
             $navbar.removeClass('menu-effect');
-            $goTop.removeClass("show");
+            $scrollTopBtn.removeClass("show");
         }
     });
 
-    $scrollTop.click(function(){
+    $scrollTopBtn.on("click", (function(){
         $('html, body').animate({
             scrollTop: 0
         }, 800);
-    });
+    }));
 
     $linkNav.on('click', function(event) {
         var target = $( $(this).attr('href') );

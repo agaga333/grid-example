@@ -453,6 +453,10 @@ body {
         width: 100%
     }
 
+    #toggle-nav {
+        display:none;
+    }
+
 }
 
 @media (min-width: 992px) {
